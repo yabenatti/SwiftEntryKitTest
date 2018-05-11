@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DA95BBBAB0615550097DDC9 /* Pods_SwiftEntryKitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C71A01321BF6C641D5754D /* Pods_SwiftEntryKitTest.framework */; };
 		E4577AFE20A5DAB100EC6A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577AFD20A5DAB100EC6A7A /* AppDelegate.swift */; };
 		E4577B0020A5DAB100EC6A7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4577AFF20A5DAB100EC6A7A /* ViewController.swift */; };
 		E4577B0320A5DAB100EC6A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4577B0120A5DAB100EC6A7A /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25C71A01321BF6C641D5754D /* Pods_SwiftEntryKitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftEntryKitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		693F6AC2D2EEB3DD88B2EBE7 /* Pods-SwiftEntryKitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEntryKitTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEntryKitTest/Pods-SwiftEntryKitTest.release.xcconfig"; sourceTree = "<group>"; };
 		E4577AFA20A5DAB100EC6A7A /* SwiftEntryKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftEntryKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4577AFD20A5DAB100EC6A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4577AFF20A5DAB100EC6A7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		E4577B0420A5DAB200EC6A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4577B0720A5DAB200EC6A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4577B0920A5DAB200EC6A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2990468938BCB63AE87B04 /* Pods-SwiftEntryKitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEntryKitTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEntryKitTest/Pods-SwiftEntryKitTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA95BBBAB0615550097DDC9 /* Pods_SwiftEntryKitTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6645CF46A523F9BEBC68D661 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB2990468938BCB63AE87B04 /* Pods-SwiftEntryKitTest.debug.xcconfig */,
+				693F6AC2D2EEB3DD88B2EBE7 /* Pods-SwiftEntryKitTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4118C498279AF8E06FC593A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25C71A01321BF6C641D5754D /* Pods_SwiftEntryKitTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E4577AF120A5DAB100EC6A7A = {
 			isa = PBXGroup;
 			children = (
 				E4577AFC20A5DAB100EC6A7A /* SwiftEntryKitTest */,
 				E4577AFB20A5DAB100EC6A7A /* Products */,
+				6645CF46A523F9BEBC68D661 /* Pods */,
+				B4118C498279AF8E06FC593A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4577B0C20A5DAB200EC6A7A /* Build configuration list for PBXNativeTarget "SwiftEntryKitTest" */;
 			buildPhases = (
+				E0DAEC367FAE65F968556EA0 /* [CP] Check Pods Manifest.lock */,
 				E4577AF620A5DAB100EC6A7A /* Sources */,
 				E4577AF720A5DAB100EC6A7A /* Frameworks */,
 				E4577AF820A5DAB100EC6A7A /* Resources */,
+				65276A020D0266624164D6ED /* [CP] Embed Pods Frameworks */,
+				AA92CCBCB7F83A36F5A48989 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65276A020D0266624164D6ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftEntryKitTest/Pods-SwiftEntryKitTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QuickLayout/QuickLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftEntryKit/SwiftEntryKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEntryKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftEntryKitTest/Pods-SwiftEntryKitTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA92CCBCB7F83A36F5A48989 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftEntryKitTest/Pods-SwiftEntryKitTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0DAEC367FAE65F968556EA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftEntryKitTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E4577AF620A5DAB100EC6A7A /* Sources */ = {
@@ -278,15 +361,13 @@
 		};
 		E4577B0D20A5DAB200EC6A7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB2990468938BCB63AE87B04 /* Pods-SwiftEntryKitTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XM356C548D;
 				INFOPLIST_FILE = SwiftEntryKitTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yasminbenatti.SwiftEntryKitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +377,13 @@
 		};
 		E4577B0E20A5DAB200EC6A7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 693F6AC2D2EEB3DD88B2EBE7 /* Pods-SwiftEntryKitTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XM356C548D;
 				INFOPLIST_FILE = SwiftEntryKitTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yasminbenatti.SwiftEntryKitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
